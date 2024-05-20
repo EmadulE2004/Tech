@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Order Summary</title>
+    <style>
+        body {
+      background-image: url(success-is-a-journey-motivational-desktop-3mhe13m09hmp6rh9.jpg);
+      margin: 0; 
+      font-family: sans-serif;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .summary-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+        }
+        .summary-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .summary-item {
+            margin-bottom: 10px;
+        }
+        .summary-item label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="summary-container">
+        <h2>Repair Order Summary</h2>
+        <div class="summary-item">
+            <label>Name:</label>
+            <span id="summary-customername"></span>
+        </div>
+        <div class="summary-item">
+            <label>Phone:</label>
+            <span id="summary-Customernumber"></span>
+        </div>
+        <div class="summary-item">
+            <label>Address:</label>
+            <span id="summary-CustomerAddress"></span>
+        </div>
+        <div class="summary-item">
+            <label>Email:</label>
+            <span id="summary-CustomerEmail"></span>
+        </div>
+        <div class="summary-item">
+            <label>Manufacturer of phone:</label>
+            <span id="summary-brand"></span>
+        </div>
+        <div class="summary-item">
+            <label>Model of phone:</label>
+            <span id="summary-model"></span>
+        </div>
+        <div class="summary-item">
+            <label>Type of repair:</label>
+            <span id="summary-Repair"></span>
+        </div>
+        <div class="summary-item">
+            <label>Date to start repair:</label>
+            <span id="summary-date"></span>
+        </div>
+        <div class="summary-item">
+            <label>Delivery instructions:</label>
+            <span id="summary-instructions"></span>
+        </div>
+        <input type="button" onclick="window.location.href='BengalTech.html'" value="Home">
+        <input type="button" onclick="window.location.href='PartsShop.html'" value="PartsShop">
+
+
+
+    </div>
+
+    <script>
+        document.getElementById('summary-customername').textContent = localStorage.getItem('customername');
+        document.getElementById('summary-Customernumber').textContent = localStorage.getItem('Customernumber');
+        document.getElementById('summary-CustomerAddress').textContent = localStorage.getItem('CustomerAddress');
+        document.getElementById('summary-CustomerEmail').textContent = localStorage.getItem('CustomerEmail');
+        document.getElementById('summary-brand').textContent = localStorage.getItem('brand');
+        document.getElementById('summary-model').textContent = localStorage.getItem('model');
+        document.getElementById('summary-Repair').textContent = localStorage.getItem('Repair');
+        document.getElementById('summary-date').textContent = localStorage.getItem('name');
+        document.getElementById('summary-instructions').textContent = localStorage.getItem('instructions');
+    </script>
+
+</body>
+</html>
